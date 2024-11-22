@@ -1,0 +1,654 @@
+input[0] = 0x00000001
+input[1] = 0x00012001
+input[2] = 0x0F0CC0DF
+input[3] = 0x00080200
+input[4] = 0x00000000
+input[5] = 0x07800438
+input[6] = 0x077F0000
+input[7] = 0x04370000
+input[8] = 0x01AC2948
+input[9] = 0x01ABEA00
+input[10] = 0x01ACA817
+input[11] = 0x01ACA7D8
+input[12] = 0x00000000
+input[13] = 0x00000000
+input[14] = 0x00000000
+input[15] = 0x00000000
+input[16] = 0x000001E0
+input[17] = 0x000001E0
+input[18] = 0x00000000
+input[19] = 0x00002004
+input[20] = 0x00000000
+input[21] = 0x000000FF
+input[22] = 0x00000308
+input[23] = 0x82102000
+input[24] = 0x00000001
+input[25] = 0x00012001
+input[26] = 0x0F0CC0DF
+input[27] = 0x00080200
+input[28] = 0x00000000
+input[29] = 0x07800438
+input[30] = 0x077F0000
+input[31] = 0x04370000
+input[32] = 0x01AC2948
+input[33] = 0x01ABEA00
+input[34] = 0x01ACA817
+input[35] = 0x01ACA7D8
+input[36] = 0x00000000
+input[37] = 0x00000000
+input[38] = 0x00000000
+input[39] = 0x00000000
+input[40] = 0x000001E0
+input[41] = 0x000001E0
+input[42] = 0x00000000
+input[43] = 0x00002004
+input[44] = 0x00000000
+input[45] = 0x000000FF
+input[46] = 0x00000308
+input[47] = 0x82102000
+input[48] = 0x00002088
+input[49] = 0x00F00000
+input[50] = 0x000000CB
+input[51] = 0x000003FF
+input[52] = 0x00200200
+input[53] = 0x00000C10
+input[54] = 0x01234554
+input[55] = 0x00003210
+input[56] = 0x01234554
+input[57] = 0x00003210
+input[58] = 0x55443322
+input[59] = 0x00001100
+input[60] = 0x55443322
+input[61] = 0x00001100
+input[62] = 0x00000000
+input[63] = 0x00008800
+input[64] = 0x20200000
+input[65] = 0x99009900
+input[66] = 0x000F0F00
+input[67] = 0x04040000
+input[68] = 0x19190000
+input[69] = 0x00000000
+input[70] = 0x00002400
+input[71] = 0x07020100
+0x4200
+value = 0x1
+reg_gclk_ctrl (Bit 31:18) = 0x0000
+pls_chnl_prot_sw_rst (Bit 12) = 0
+pls_force_frm_en (Bit 7) = 0
+pls_force_frm_rst (Bit 6) = 0
+reg_frm_en_mode (Bit 5) = 0
+reg_frm_rst_mode (Bit 4) = 0
+reg_chnl_enable (Bit 0) = 1
+
+0x4201
+value = 0x12001
+Reserved (Bit 31:23) = 0
+reg_444to422_mode (Bit 22:20) = 0
+reg_422to420_mode (Bit 19:17) = 0
+reg_core_sel (Bit 16) = 1
+reg_bayer_input_plane (Bit 15:14) = 0
+reg_enc_align_en (Bit 13) = 1
+reg_enc_bits_luma (Bit 12:10) = 0
+reg_enc_bits_chrm (Bit 9:7) = 0
+reg_enc_format (Bit 6:4) = 0
+reg_input_format (Bit 3:1) = 0
+reg_fmt444_comb (Bit 0) = 1
+
+0x4202
+value = 0xf0cc0df
+Reserved (Bit 31:28) = 0
+reg_top_force_en (Bit 27:24) = 15
+reg_v_slice_mode (Bit 23) = 0
+reg_h_slice_mode (Bit 22) = 0
+reg_v_slice_num (Bit 21:18) = 3
+reg_h_slice_num (Bit 17:14) = 3
+pls_v_slice_clr (Bit 13) = 0
+pls_h_slice_clr (Bit 12) = 0
+Reserved (Bit 11) = 0
+reg_pip_ini_ctrl (Bit 10) = 0
+reg_pip_mode (Bit 9) = 0
+reg_trans_thr_num (Bit 8:1) = 111
+reg_trans_ctrl_en (Bit 0) = 1
+
+0x4203
+value = 0x80200
+  reg_dimm_layer_en: 0
+  reg_dimm_data:     0x80200
+
+0x4204
+value = 0x0
+VFCE_CHNL0_DUMMY_DATA:
+  reg_dummy_data: 0x0000000
+
+0x4205
+value = 0x7800438
+VFCE_CHNL0_SIZE_IN:
+  reg_hsize_bg: 1920 (horizontal background size in pixels)
+  reg_vsize_bg: 1080 (vertical background size in pixels)
+
+0x4206
+value = 0x77f0000
+VFCE_CHNL0_PIXEL_IN_HOR_SCOPE:
+  reg_enc_end_h: 1919 (encoding end horizontal pixel)
+  reg_enc_bgn_h: 0 (encoding start horizontal pixel)
+
+0x4207
+value = 0x4370000
+VFCE_CHNL0_PIXEL_IN_VER_SCOPE:
+  reg_enc_end_v: 1079 (encoding end vertical pixel)
+  reg_enc_bgn_v: 0 (encoding start vertical pixel)
+
+0x4208
+value = 0x1ac2948
+VFCE_CHNL0_HEAD1_BADDR:
+  reg_head1_baddr: 0x01AC2948
+
+0x4209
+value = 0x1abea00
+VFCE_CHNL0_HEAD0_BADDR:
+  reg_head0_baddr: 0x01ABEA00
+
+0x420a
+value = 0x1aca817
+VFCE_CHNL0_BODY1_BADDR:
+  reg_body1_baddr: 0x01ACA817
+
+0x420b
+value = 0x1aca7d8
+VFCE_CHNL0_BODY0_BADDR:
+  reg_body0_baddr: 0x01ACA7D8
+
+0x420c
+value = 0x0
+VFCE_CHNL0_CONV_BUF_OFST:
+  reg_cbuf_1_offset: 0 (conversion buffer 1 offset)
+  reg_cbuf_0_offset: 0 (conversion buffer 0 offset)
+
+0x420d
+value = 0x0
+VFCE_CHNL0_DS_BUF_OFST:
+  DS_BUF_OFFSET: 0 (data sampling buffer offset)
+
+0x420e
+value = 0x0
+VFCE_CHNL0_HEAD_BUF_OFST:
+  HEAD_1_OFFSET: 0
+  HEAD_0_OFFSET: 0
+
+0x420f
+value = 0x0
+VFCE_CHNL0_BODY_BUF_OFST:
+  BODY_1_OFFSET: 0
+  BODY_0_OFFSET: 0
+
+0x4210
+value = 0x1e0
+VFCE_CHNL0_STAT1:
+  RO_DBG_TOP_INFO1: 480
+
+0x4211
+value = 0x1e0
+VFCE_CHNL0_STAT2:
+  RO_DBG_TOP_INFO2: 480
+
+0x4212
+value = 0x0
+VFCE_CHNL0_CLR_FLAG (W1T):
+  PLS_CLR_FLAG: 0
+
+0x4213
+value = 0x2004
+VFCE_CHNL0_STA0_FLAG (RO):
+  RO_STA0_FLAG: 8196
+
+0x4214
+value = 0x0
+VFCE_CHNL0_STA1_FLAG (RO):
+  RO_STA1_FLAG: 0
+
+0x4215
+value = 0xff
+VFCE_CHNL0_WR_ARB_MISC:
+  PLS_ARB_SW_RST: 0
+  REG_ARB_AWBLK_LAST1: 0
+  REG_ARB_AWBLK_LAST0: 0
+  REG_ARB_WEIGHT_CH1: 15
+  REG_ARB_WEIGHT_CH0: 15
+
+0x4216
+value = 0x308
+VFCE_CHNL0_AFBC_MODE_0:
+  REG_UNCMP_SIZE: 24
+  REG_BURST_LENGTH_ADD_VALUE: 2
+  REG_OFSET_BURST4_EN: 0
+  REG_BURST_LENGTH_ADD_EN: 0
+
+0x4217
+value = 0x82102000
+VFCE_CHNL0_AFRC_MODE_0:
+  REG_AFRC_HEAD_MODE: 1
+  REG_INPUT_FORMAT_MODE: 0
+  REG_PIXEL_FORMAT: 2
+  REG_INPUT_BAYER_MODE: 0
+  REG_COMP_TARGET_BYTE_0: 32
+  REG_COMP_TARGET_BYTE_1: 32
+  REG_PIXEL_TYPE_0: 0
+  REG_PIXEL_TYPE_1: 0
+
+0x4220
+value = 0x1
+reg_gclk_ctrl (Bit 31:18) = 0x0000
+pls_chnl_prot_sw_rst (Bit 12) = 0
+pls_force_frm_en (Bit 7) = 0
+pls_force_frm_rst (Bit 6) = 0
+reg_frm_en_mode (Bit 5) = 0
+reg_frm_rst_mode (Bit 4) = 0
+reg_chnl_enable (Bit 0) = 1
+
+0x4221
+value = 0x12001
+Reserved (Bit 31:23) = 0
+reg_444to422_mode (Bit 22:20) = 0
+reg_422to420_mode (Bit 19:17) = 0
+reg_core_sel (Bit 16) = 1
+reg_bayer_input_plane (Bit 15:14) = 0
+reg_enc_align_en (Bit 13) = 1
+reg_enc_bits_luma (Bit 12:10) = 0
+reg_enc_bits_chrm (Bit 9:7) = 0
+reg_enc_format (Bit 6:4) = 0
+reg_input_format (Bit 3:1) = 0
+reg_fmt444_comb (Bit 0) = 1
+
+0x4222
+value = 0xf0cc0df
+Reserved (Bit 31:28) = 0
+reg_top_force_en (Bit 27:24) = 15
+reg_v_slice_mode (Bit 23) = 0
+reg_h_slice_mode (Bit 22) = 0
+reg_v_slice_num (Bit 21:18) = 3
+reg_h_slice_num (Bit 17:14) = 3
+pls_v_slice_clr (Bit 13) = 0
+pls_h_slice_clr (Bit 12) = 0
+Reserved (Bit 11) = 0
+reg_pip_ini_ctrl (Bit 10) = 0
+reg_pip_mode (Bit 9) = 0
+reg_trans_thr_num (Bit 8:1) = 111
+reg_trans_ctrl_en (Bit 0) = 1
+
+0x4223
+value = 0x80200
+  reg_dimm_layer_en: 0
+  reg_dimm_data:     0x0080200
+
+0x4224
+value = 0x0
+VFCE_CHNL1_DUMMY_DATA:
+  reg_dummy_data: 0x0000000
+
+0x4225
+value = 0x7800438
+VFCE_CHNL1_SIZE_IN:
+  reg_hsize_bg: 1920 (horizontal background size in pixels)
+  reg_vsize_bg: 1080 (vertical background size in pixels)
+
+0x4226
+value = 0x77f0000
+VFCE_CHNL1_PIXEL_IN_HOR_SCOPE:
+  reg_enc_end_h: 1919 (encoding end horizontal pixel)
+  reg_enc_bgn_h: 0 (encoding start horizontal pixel)
+
+0x4227
+value = 0x4370000
+VFCE_CHNL1_PIXEL_IN_VER_SCOPE:
+  reg_enc_end_v: 1079 (encoding end vertical pixel)
+  reg_enc_bgn_v: 0 (encoding start vertical pixel)
+
+0x4228
+value = 0x1ac2948
+VFCE_CHNL1_HEAD1_BADDR:
+  reg_head1_baddr: 0x01AC2948
+
+0x4229
+value = 0x1abea00
+VFCE_CHNL1_HEAD0_BADDR:
+  reg_head0_baddr: 0x01ABEA00
+
+0x422a
+value = 0x1aca817
+VFCE_CHNL1_BODY0_BADDR:
+  reg_body0_baddr: 0x01ACA817
+
+0x422b
+value = 0x1aca7d8
+VFCE_CHNL1_BODY1_BADDR:
+  reg_body1_baddr: 0x01ACA7D8
+
+0x422c
+value = 0x0
+VFCE_CHNL1_CONV_BUF_OFST:
+  reg_cbuf_1_offset: 0 (conversion buffer 1 offset)
+  reg_cbuf_0_offset: 0 (conversion buffer 0 offset)
+
+0x422d
+value = 0x0
+VFCE_CHNL1_DS_BUF_OFST:
+  DS_BUF_OFFSET: 0 (data sampling buffer offset)
+
+0x422e
+value = 0x0
+VFCE_CHNL1_HEAD_BUF_OFST:
+  HEAD_1_OFFSET: 0
+  HEAD_0_OFFSET: 0
+
+0x422f
+value = 0x0
+VFCE_CHNL1_BODY_BUF_OFST:
+  BODY_1_OFFSET: 0
+  BODY_0_OFFSET: 0
+
+0x4230
+value = 0x1e0
+VFCE_CHNL1_STAT1:
+  RO_DBG_TOP_INFO1: 480
+
+0x4231
+value = 0x1e0
+VFCE_CHNL1_STAT2:
+  RO_DBG_TOP_INFO2: 480
+
+0x4232
+value = 0x0
+VFCE_CHNL1_CLR_FLAG (W1T):
+  PLS_CLR_FLAG: 0
+
+0x4233
+value = 0x2004
+VFCE_CHNL1_STA0_FLAG (RO):
+  RO_STA0_FLAG: 8196
+
+0x4234
+value = 0x0
+VFCE_CHNL1_STA1_FLAG (RO):
+  RO_STA1_FLAG: 0
+
+0x4235
+value = 0xff
+VFCE_CHNL1_WR_ARB_MISC:
+  PLS_ARB_SW_RST: 0
+  REG_ARB_AWBLK_LAST1: 0
+  REG_ARB_AWBLK_LAST0: 0
+  REG_ARB_WEIGHT_CH1: 15
+  REG_ARB_WEIGHT_CH0: 15
+
+0x4236
+value = 0x308
+VFCE_CHNL1_AFBC_MODE_0:
+  REG_UNCMP_SIZE: 24
+  REG_BURST_LENGTH_ADD_VALUE: 2
+  REG_OFSET_BURST4_EN: 0
+  REG_BURST_LENGTH_ADD_EN: 0
+
+0x4237
+value = 0x82102000
+VFCE_CHNL1_AFRC_MODE_0:
+  REG_AFRC_HEAD_MODE: 1
+  REG_INPUT_FORMAT_MODE: 0
+  REG_PIXEL_FORMAT: 2
+  REG_INPUT_BAYER_MODE: 0
+  REG_COMP_TARGET_BYTE_0: 32
+  REG_COMP_TARGET_BYTE_1: 32
+  REG_PIXEL_TYPE_0: 0
+  REG_PIXEL_TYPE_1: 0
+
+0x4240
+value = 0x2088
+VFCE_AFBCE_FORMAT:
+  reg_burst_length_add_value: 2
+  reg_ofset_burst4_en: 0
+  reg_burst_length_add_en: 0
+  reg_format_mode: 0
+  reg_compbits_c: 8
+  reg_compbits_y: 8
+
+0x4241
+value = 0xf00000
+VFCE_AFBCE_MODE_EN:
+  reg_adpt_interleave_ymode: 0
+  reg_adpt_interleave_cmode: 0
+  reg_adpt_yinterleave_luma_ride: 1
+  reg_adpt_yinterleave_chrm_ride: 1
+  reg_adpt_xinterleave_luma_ride: 1
+  reg_adpt_xinterleave_chrm_ride: 1
+  reg_disable_order_mode_i_6: 0
+  reg_disable_order_mode_i_5: 0
+  reg_disable_order_mode_i_4: 0
+  reg_disable_order_mode_i_3: 0
+  reg_disable_order_mode_i_2: 0
+  reg_disable_order_mode_i_1: 0
+  reg_disable_order_mode_i_0: 0
+  reg_minval_yenc_en: 0
+  reg_16x4block_enable: 0
+  reg_uncompress_split_mode: 0
+  reg_input_padding_uv128: 0
+  reg_dwds_padding_uv128: 0
+  reg_force_order_mode_value: 0
+  reg_force_order_mode_en: 0
+
+0x4242
+value = 0xcb
+VFCE_AFBCE_DWSCALAR:
+  reg_dwscalar_w0: 3
+  reg_dwscalar_w1: 0
+  reg_dwscalar_h0: 2
+  reg_dwscalar_h1: 3
+
+0x4243
+value = 0x3ff
+VFCE_AFBCE_DEFCOLOR_1:
+  reg_enc_defaultcolor_3: 0
+  reg_enc_defaultcolor_0: 1023
+
+0x4244
+value = 0x200200
+VFCE_AFBCE_DEFCOLOR_2:
+  reg_enc_defaultcolor_2: 512
+  reg_enc_defaultcolor_1: 512
+
+0x4245
+value = 0xc10
+VFCE_AFBCE_QUANT_ENABLE:
+  reg_quant_expand_en_1: 1
+  reg_quant_expand_en_0: 1
+  reg_bcleav_ofst: 0
+  reg_quant_enable_1: 1
+  reg_quant_enable_0: 0
+
+0x4246
+value = 0x1234554
+VFCE_AFBCE_IQUANT_LUT_1:
+  reg_iquant_yclut_0_11: 0
+  reg_iquant_yclut_0_10: 1
+  reg_iquant_yclut_0_9: 2
+  reg_iquant_yclut_0_8: 3
+  reg_iquant_yclut_0_7: 4
+  reg_iquant_yclut_0_6: 5
+  reg_iquant_yclut_0_5: 5
+  reg_iquant_yclut_0_4: 4
+
+0x4247
+value = 0x3210
+VFCE_AFBCE_IQUANT_LUT_2:
+  reg_iquant_yclut_0_3: 3
+  reg_iquant_yclut_0_2: 2
+  reg_iquant_yclut_0_1: 1
+  reg_iquant_yclut_0_0: 0
+
+0x4248
+value = 0x1234554
+VFCE_AFBCE_IQUANT_LUT_3:
+  reg_iquant_yclut_1_11: 0
+  reg_iquant_yclut_1_10: 1
+  reg_iquant_yclut_1_9: 2
+  reg_iquant_yclut_1_8: 3
+  reg_iquant_yclut_1_7: 4
+  reg_iquant_yclut_1_6: 5
+  reg_iquant_yclut_1_5: 5
+  reg_iquant_yclut_1_4: 4
+
+0x4249
+value = 0x3210
+VFCE_AFBCE_IQUANT_LUT_4:
+  reg_iquant_yclut_1_3: 3
+  reg_iquant_yclut_1_2: 2
+  reg_iquant_yclut_1_1: 1
+  reg_iquant_yclut_1_0: 0
+
+0x424a
+value = 0x55443322
+RQUANT_LUT_1:
+reg_rquant_yclut_0_4: 2
+reg_rquant_yclut_0_5: 2
+reg_rquant_yclut_0_6: 3
+reg_rquant_yclut_0_7: 3
+reg_rquant_yclut_0_8: 4
+reg_rquant_yclut_0_9: 4
+reg_rquant_yclut_0_10: 5
+reg_rquant_yclut_0_11: 5
+
+0x424b
+value = 0x1100
+RQUANT_LUT_2:
+reg_rquant_yclut_0_0: 0
+reg_rquant_yclut_0_1: 0
+reg_rquant_yclut_0_2: 1
+reg_rquant_yclut_0_3: 1
+
+0x424c
+value = 0x55443322
+RQUANT_LUT_3:
+reg_rquant_yclut_1_4: 2
+reg_rquant_yclut_1_5: 2
+reg_rquant_yclut_1_6: 3
+reg_rquant_yclut_1_7: 3
+reg_rquant_yclut_1_8: 4
+reg_rquant_yclut_1_9: 4
+reg_rquant_yclut_1_10: 5
+reg_rquant_yclut_1_11: 5
+
+0x424d
+value = 0x1100
+RQUANT_LUT_4:
+reg_rquant_yclut_1_0: 0
+reg_rquant_yclut_1_1: 0
+reg_rquant_yclut_1_2: 1
+reg_rquant_yclut_1_3: 1
+
+0x4250
+value = 0x0
+VFCE_AFRCE_CORE_PIXEL_TYPE:
+  reg_pixel_type_0: 0
+  reg_pixel_type_1: 0
+  reg_pixel_type_2: 0
+  reg_pixel_type_3: 0
+
+0x4251
+value = 0x8800
+VFCE_AFRCE_CORE_PIXEL_DEPTH:
+  reg_input_bit_depth_0: 8
+  reg_input_bit_depth_1: 8
+  reg_input_bit_depth_2: 0
+  reg_input_bit_depth_3: 0
+
+0x4252
+value = 0x20200000
+VFCE_AFRCE_CORE_TARGET_SIZE:
+  reg_comp_target_byte_0: 32
+  reg_comp_target_byte_1: 32
+  reg_comp_target_byte_2: 0
+  reg_comp_target_byte_3: 0
+
+0x4253
+value = 0x99009900
+VFCE_AFRCE_CORE_LAST_MAX_AC:
+  reg_raw_last_th_0: 9
+  reg_raw_last_th_1: 9
+  reg_raw_last_th_2: 0
+  reg_raw_last_th_3: 0
+  reg_max_ac_depth_0: 9
+  reg_max_ac_depth_1: 9
+  reg_max_ac_depth_2: 0
+  reg_max_ac_depth_3: 0
+
+0x4254
+value = 0xf0f00
+VFCE_AFRCE_CORE_HEADER_CTRL:
+  reg_comp_raw_mode_en_0: 1
+  reg_comp_raw_mode_en_1: 1
+  reg_comp_raw_mode_en_2: 1
+  reg_comp_raw_mode_en_3: 1
+  reg_comp_force_raw_mode_en_0: 0
+  reg_comp_force_raw_mode_en_1: 0
+  reg_comp_force_raw_mode_en_2: 0
+  reg_comp_force_raw_mode_en_3: 0
+  reg_bitstream_pack_mode_0: 1
+  reg_bitstream_pack_mode_1: 1
+  reg_bitstream_pack_mode_2: 1
+  reg_bitstream_pack_mode_3: 1
+  reg_header_last_extend_en_0: 0
+  reg_header_last_extend_en_1: 0
+  reg_header_last_extend_en_2: 0
+  reg_header_last_extend_en_3: 0
+  reg_header_mode_0: 0
+  reg_header_mode_1: 0
+  reg_header_mode_2: 0
+  reg_header_mode_3: 0
+
+0x4255
+value = 0x4040000
+VFCE_AFRCE_CORE_PACK_MODE_MIN_BYTE:
+  reg_bitstream_pack_min_byte_0: 4
+  reg_bitstream_pack_min_byte_1: 4
+  reg_bitstream_pack_min_byte_2: 0
+  reg_bitstream_pack_min_byte_3: 0
+
+0x4256
+value = 0x19190000
+VFCE_AFRCE_CORE_DICT_ERROR_TH:
+  reg_dict_error_th_0: 25
+  reg_dict_error_th_1: 25
+  reg_dict_error_th_2: 0
+  reg_dict_error_th_3: 0
+
+0x4257
+value = 0x0
+VFCE_AFRCE_CORE_DICT_ENTER_TH:
+  reg_dict_diff_enter_th_0: 0
+  reg_dict_diff_enter_th_1: 0
+  reg_dict_diff_enter_th_2: 0
+  reg_dict_diff_enter_th_3: 0
+
+0x4258
+value = 0x2400
+VFCE_AFRCE_CORE_DICT_CTRL:
+  reg_dict_blk_diff_cont_th_0: 0
+  reg_dict_blk_diff_cont_th_1: 2
+  reg_dict_blk_diff_cont_th_2: 0
+  reg_dict_blk_diff_cont_th_3: 0
+  reg_dict_en_0: 0
+  reg_dict_en_1: 0
+  reg_dict_en_2: 0
+  reg_dict_en_3: 0
+
+0x4259
+value = 0x7020100
+VFCE_AFRCE_INPUT_CTRL Register Fields:
+  reg_rgb2yuv_en: enabled
+  reg_pixel_is_diff_chn: disabled lvl 2 dct
+  reg_input_is_rgba: rgba header
+  reg_input_format_mode: 0
+  reg_pixel_format: 2
+  reg_input_yuv_format: 0
+  reg_input_bayer_mode: 1
+  reg_bayer_y_ofst: 0
+  reg_bayer_x_ofst: 0
+  reg_block_mode: 0
