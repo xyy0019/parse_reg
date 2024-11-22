@@ -113,7 +113,7 @@ reg_trans_ctrl_en (Bit 0) = 1
 0x4203
 value = 0x80200
   reg_dimm_layer_en: 0
-  reg_dimm_data:     0x80200
+  reg_dimm_data:	 0x80200
 
 0x4204
 value = 0x0
@@ -278,7 +278,7 @@ reg_trans_ctrl_en (Bit 0) = 1
 0x4223
 value = 0x80200
   reg_dimm_layer_en: 0
-  reg_dimm_data:     0x0080200
+  reg_dimm_data:	 0x0080200
 
 0x4224
 value = 0x0
